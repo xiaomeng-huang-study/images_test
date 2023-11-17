@@ -31,7 +31,7 @@ except Exception as e:
 
 # Form the string
 current_directory = os.path.basename(os.getcwd())
-github_url = f"https://github.com/ICH-BIN-HXM/{current_directory}/{latest_file}?raw="
+github_url = f"https://github.com/ICH-BIN-HXM/{current_directory}/blob/main/{latest_file}?raw="
 
 # Copy to clipboard
 pyperclip.copy(github_url)
