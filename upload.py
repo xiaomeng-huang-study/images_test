@@ -2,6 +2,7 @@ import os
 import subprocess
 import datetime
 import pyperclip
+import time
 
 # Find the latest file in the current directory
 files = [f for f in os.listdir() if f.startswith("Snipaste")]
@@ -37,6 +38,9 @@ github_url = f"https://github.com/ICH-BIN-HXM/{current_directory}/blob/main/{lat
 pyperclip.copy(github_url)
 
 print(f"Generated GitHub link has been copied to the clipboard: {github_url}")
+
+# Delay of 2 seconds 
+time.sleep(2)
 
 # Exit the program
 exit()
