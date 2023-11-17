@@ -18,7 +18,7 @@ try:
     subprocess.run(["git", "add", "."])
 
     # Extract the part of the filename excluding "Snipaste_" as variable time_edited
-    time_edited = latest_file.replace("Snipaste_", "")
+    time_edited = latest_file.replace("Snipaste_", "").replace(".png", "")
 
     commit_message = f"edited with autoscript at {time_edited}"
     subprocess.run(["git", "commit", "-m", commit_message])
