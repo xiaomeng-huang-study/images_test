@@ -1,1 +1,1 @@
-py .\upload.py
+powershell.exe -command "py .\upload.py"
