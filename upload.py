@@ -5,7 +5,7 @@ import pyperclip
 import time
 
 # Find the latest file in the current directory
-files = [f for f in os.listdir() if f.startswith("Snipaste")]
+files = [f for f in os.listdir() if f.startswith("Scrennshot")]
 if not files:
     print("No files matching the criteria found. Program exiting.")
     exit()
@@ -18,8 +18,8 @@ try:
     subprocess.run(["git", "pull"])
     subprocess.run(["git", "add", "."])
 
-    # Extract the part of the filename excluding "Snipaste_" as variable time_edited
-    time_edited = latest_file.replace("Snipaste_", "").replace(".png", "")
+    # Extract the part of the filename excluding "Scrennshot_" as variable time_edited
+    time_edited = latest_file.replace("Scrennshot_", "").replace(".png", "")
 
     commit_message = f"edited with autoscript at {time_edited}"
     subprocess.run(["git", "commit", "-m", commit_message])
