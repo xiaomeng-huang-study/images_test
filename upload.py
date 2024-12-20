@@ -33,7 +33,7 @@ except Exception as e:
 # Form the string
 current_directory = os.path.basename(os.getcwd())
 # github_url = f"https://raw.githubusercontent.com/xiaomeng-huang-study/{current_directory}/refs/heads/main/{latest_file}?raw="
-github_url = f'<img src="https://raw.githubusercontent.com/xiaomeng-huang-study/{current_directory}/refs/heads/main/{latest_file}?raw=" width="80" /> '
+github_url = f'<img src="https://raw.githubusercontent.com/xiaomeng-huang-study/{current_directory}/refs/heads/main/{latest_file}?raw=" width="80%" /> '
 
 # Copy to clipboard
 pyperclip.copy(github_url)
